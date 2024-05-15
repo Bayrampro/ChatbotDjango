@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load i18n %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% trans 'User Dialogues' %}</title>
+</head>
+<body>
+    <h1>{% trans 'User Dialogues' %}</h1>
+<ul>
+{% for dialogue_file, session_key in dialogues_with_session_keys %}
+    <li><a href="{% url 'dialogue_detail' user=request.user session_key=session_key %}">{{ dialogue_file }}</a></li>
+{% endfor %}
+</ul>
+
+</body>
+</html>

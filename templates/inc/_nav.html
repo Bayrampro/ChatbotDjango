@@ -1,0 +1,62 @@
+{% load static %}
+{% load i18n %}
+ <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="{% url 'home' %}#home" class="navbar-brand">
+                    <!-- <h1 class="text-white">Payhasly<span class="text-dark">.</span>EA</h1> -->
+                    <img  src="{% static 'img/logo-original.png' %}" alt="" width="60" height="60" style="position: absolute; top: 3px;">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="{% url 'home' %}#home" class="nav-item nav-link active">{% trans 'Baş sahypa' %}</a>
+                        <a href="{% url 'home' %}#about" class="nav-item nav-link">{% trans 'Taslama hakda' %}</a>
+                        <a href="{% url 'home' %}#News" class="nav-item nav-link">{% trans 'Täzelikler' %}</a>
+                        <a href="{% url 'home' %}#Our-team" class="nav-item nav-link">{% trans 'Biziň Toparymyz' %}</a>
+                        <a href="{% url 'home' %}#contact" class="nav-item nav-link">{% trans 'Habarlaşmak' %}</a>
+                        {% if request.user.is_authenticated %}
+                            <a href="{% url 'logout' %}" class="nav-item nav-link">{% trans 'Çykyş' %}</a>
+                        {% else %}
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle"
+                                   data-bs-toggle="dropdown">{% trans 'Bize goşul' %}</a>
+                                <div class="dropdown-menu bg-light mt-2">
+                                    <a href="{% url 'register' %}" class="dropdown-item">{% trans 'Agza bol' %}</a>
+                                    <a href="{% url 'login' %}" class="dropdown-item">{% trans 'Giriş' %}</a>
+                                </div>
+                            </div>
+                        {% endif %}
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle"
+                               data-bs-toggle="dropdown">{% trans 'Dil saýla' %}</a>
+                            <div class="dropdown-menu bg-light mt-2">
+                                <a href="" id="first" class="dropdown-item">EN</a>
+                                <a href="" id="second" class="dropdown-item">RU</a>
+                                <a href="" id="third" class="dropdown-item">TK</a>
+                            </div>
+                        </div>
+                    <script>
+                        const hostname = window.location.hostname;
+                        const port = window.location.port;
+                        const link1 = document.getElementById("first");
+                        const link2 = document.getElementById("second");
+                        const link3 = document.getElementById("third");
+                        if (hostname == '127.0.0.1') {
+                            link1.href = "http://" + hostname + ':' + port + '/en';
+                            link2.href = "http://" + hostname + ':' + port + '/ru';
+                            link3.href = "http://" + hostname + ':' + port + '/tk';
+                        } else {
+                            link1.href = "http://" + hostname + '/en';
+                            link2.href = "http://" + hostname + '/ru';
+                            link3.href = "http://" + hostname + '/tk';
+                        }
+                    </script>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>

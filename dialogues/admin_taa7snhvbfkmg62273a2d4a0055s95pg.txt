@@ -1,0 +1,352 @@
+User: Salam
+Bot:  Salam size näme kňmek edip bilerin
+
+User: Salam
+Bot:  Salam size näme kňmek edip bilerin
+
+User: name basaryan
+Bot: Meniň başarnyklarym häzirlikçe çäkli
+
+User: name basaryp bilyan
+Bot: Meniň başarnyklarym häzirlikçe çäkli
+
+User: näme başarýan
+Bot: Meniň başarnyklarym häzirlikçe çäkli
+
+User: что умеет
+Bot: На данный момент мои навыки ограничены
+
+User: что ты умеет
+Bot: На данный момент мои навыки ограничены
+
+User: что ты умееш
+Bot: Я готовлюсь тебе помочь
+
+User: what can do
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: what can do
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: can do
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: can
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: özüňi kämilleşdirmek
+Bot: Öňüňizde belli bir maksat goýuň we şonuň ugrunda hereket edip
+
+User: самосовершенствоваться
+Bot: ставить перед собой конкретную цель и двигаться к ней
+
+User: самосовершенствоваться как
+Bot: ставить перед собой конкретную цель и двигаться к ней
+
+User: как ясамосовершенствоваться
+Bot: Привет у меня нет чувств я заботливый искусственный интеллект
+
+User: как я самосовершенствоваться
+Bot: ставить перед собой конкретную цель и двигаться к ней
+
+User: self-improvement
+Bot: set a specific goal in front of you and move towards it
+
+User: How I self-improvement
+Bot: set a specific goal in front of you and move towards it
+
+User: saýt döredilişi
+Bot: Saýt döretmek üçin iň azyndan HTML CSS we Python programmirleme dillerini bilmeli
+
+User: nahili saýt döredilişi
+Bot: Saýt döretmek üçin iň azyndan HTML CSS we Python programmirleme dillerini bilmeli
+
+User: разработка сайтов
+Bot: Для создания сайта необходимо знать как минимум языки программирования HTML CSS и Python
+
+User: как разработка сайтов
+Bot: Для создания сайта необходимо знать как минимум языки программирования HTML CSS и Python
+
+User: how can website development
+Bot: To create a website you need to know at least HTML CSS and Python programming languages
+
+User: telefon markalary
+Bot: Iň gowy telefon markalaryna "Apple Iphone" "Samsung" hem-de häzirki döwürde ýaryşa goşulan "XIOMI"
+
+User: phone brands best
+Bot: The best phone brands include Apple "iPhone" "Samsung" and now "XIOMI" has joined the race
+
+User: бренды телефонов
+Bot: К лучшим брендам телефонов относятся Apple "Iphone" "Samsung" а теперь к гонке присоединилась "XIOMI"
+
+User: demirýol bilet
+Bot: Demir ýol biledini online görnüşinde ýörite bellenen "railway.gov.tm" saýtyndan ýa-da "Saraý" ykjam mobil goşundysyndan alyp bilersiňiz
+
+User: demirýol biledi nadip almaly
+Bot: Demir ýol biledini online görnüşinde ýörite bellenen "railway.gov.tm" saýtyndan ýa-da "Saraý" ykjam mobil goşundysyndan alyp bilersiňiz
+
+User: железнодорожный билет
+Bot: Купить онлайн можно на специализированном сайте "railway.gov.tm" или в мобильном приложении "Сарай"
+
+User: железнодорожный билет regbnm
+Bot: Купить онлайн можно на специализированном сайте "railway.gov.tm" или в мобильном приложении "Сарай"
+
+User: железнодорожный билет купить
+Bot: Купить онлайн можно на специализированном сайте "railway.gov.tm" или в мобильном приложении "Сарай"
+
+User: железнодорожный биледы где купить
+Bot: Купить онлайн можно на специализированном сайте "railway.gov.tm" или в мобильном приложении "Сарай"
+
+User: купить биледы для  железнодорог
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: купить биледы для железнодорожных поездов
+Bot: Купить онлайн можно на специализированном сайте "railway.gov.tm" или в мобильном приложении "Сарай"
+
+User: railway ticket
+Bot:  You can buy online from dedicated website "railway.gov.tm" or "Sarai" mobile application
+
+User: railway ticket
+Bot:  You can buy online from dedicated website "railway.gov.tm" or "Sarai" mobile application
+
+User: how can I get railway ticket
+Bot:  You can buy online from dedicated website "railway.gov.tm" or "Sarai" mobile application
+
+User: how can i buy or get railway tickets?
+Bot:  You can buy online from dedicated website "railway.gov.tm" or "Sarai" mobile application
+
+User: Mary howa nahili
+Bot: Сейчас в Mary Температура 23.03°C 
+Облачная и пасмурная погода создает
+уютную атмосферу для посещения кафе или уютного места для чтения. 
+Можно насладиться чашечкой горячего напитка, читать книгу или просто
+наслаждаться спокойным временем.
+можно выбрать легкую куртку или свитер. Они помогут защитить от прохлады, 
+но при этом не будут слишком громоздкими.
+
+User: howa maglumaty Daşoguzda
+Bot: В каком городе вы хотите узнать погоду?
+
+User: howa maglumaty Daşoguz
+Bot: В каком городе вы хотите узнать погоду?
+
+User: howa maglumaty dashoguzda
+Bot: Дата: 2024-04-26, Температура: 21.85°C - 24.19°C
+Если у вас есть фотоаппарат или смартфон с хорошей камерой, 
+отправляйтесь на прогулку и делайте красивые фотографии природы, 
+архитектуры или просто своих близких.
+Носите легкую рубашку, майку или футболку из натуральных материалов, 
+таких как хлопок или лен. Это поможет вам оставаться прохладным и комфортным в течение дня. 
+
+Дата: 2024-04-27, Температура: 16.1°C - 23.73°C
+Если у вас есть фотоаппарат или смартфон с хорошей камерой, 
+отправляйтесь на прогулку и делайте красивые фотографии природы, 
+архитектуры или просто своих близких.
+Носите легкую рубашку, майку или футболку из натуральных материалов, 
+таких как хлопок или лен. Это поможет вам оставаться прохладным и комфортным в течение дня. 
+
+Дата: 2024-04-28, Температура: 14.22°C - 23.33°C
+Если у вас есть фотоаппарат или смартфон с хорошей камерой, 
+отправляйтесь на прогулку и делайте красивые фотографии природы, 
+архитектуры или просто своих близких.
+Носите легкую рубашку, майку или футболку из натуральных материалов, 
+таких как хлопок или лен. Это поможет вам оставаться прохладным и комфортным в течение дня. 
+
+Дата: 2024-04-29, Температура: 13.85°C - 26.02°C
+Если у вас есть фотоаппарат или смартфон с хорошей камерой, 
+отправляйтесь на прогулку и делайте красивые фотографии природы, 
+архитектуры или просто своих близких.
+Носите легкую рубашку, майку или футболку из натуральных материалов, 
+таких как хлопок или лен. Это поможет вам оставаться прохладным и комфортным в течение дня. 
+
+Дата: 2024-04-30, Температура: 16.67°C - 29.02°C
+Если у вас есть фотоаппарат или смартфон с хорошей камерой, 
+отправляйтесь на прогулку и делайте красивые фотографии природы, 
+архитектуры или просто своих близких.
+Носите легкую рубашку, майку или футболку из натуральных материалов, 
+таких как хлопок или лен. Это поможет вам оставаться прохладным и комфортным в течение дня. 
+
+Дата: 2024-05-01, Температура: 20.27°C - 31.38°C
+Облачная и пасмурная погода создает
+уютную атмосферу для посещения кафе или уютного места для чтения. 
+Можно насладиться чашечкой горячего напитка, читать книгу или просто
+наслаждаться спокойным временем.
+можно выбрать легкую куртку или свитер. Они помогут защитить от прохлады, 
+но при этом не будут слишком громоздкими. 
+
+
+
+User: sagady aýdaý
+Bot: Hello I have no feelings I am a caring artificial intelligence
+
+User: wagty aýdaý
+Bot: Текущее время: 20:40
+
+User: sagady aýdaý
+Bot: Hello I have no feelings I am a caring artificial intelligence
+
+User: sagat näçe boldy
+Bot: 19 sany ýokary okuw jaýy bar
+
+User: sagat
+Bot: Текущее время: 20:51
+
+User: sagat aýt
+Bot: Текущее время: 20:51
+
+User: sagat aýdaýda
+Bot: Текущее время: 20:51
+
+User: sagat aýt
+Bot: Текущее время: 20:51
+
+User: sagady aýt
+Bot: Hello I have no feelings I am a caring artificial intelligence
+
+User: sagady aýdaý
+Bot: Hello I have no feelings I am a caring artificial intelligence
+
+User: sagady aýdaý
+Bot: Hello I have no feelings I am a caring artificial intelligence
+
+User: sagady aýdaý
+Bot: Текущее время: 21:01
+
+User: sagatlar näçe boldy
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: hepdäniň güni
+Bot: Şu gün: Anna
+
+User: senäni aýt
+Bot: Сегодняшняя дата: 2024-04-26
+
+User: sagat
+Bot: Сегодняшняя дата: 2024-04-26
+
+User: sagat
+Bot: Сегодняшняя дата: 2024-04-26
+
+User: sagat
+Bot: Текущее время: 21:55
+
+User: sagat
+Bot: Текущее время: 21:57
+
+User: sagat
+Bot: Текущее время 22:01
+
+User: sene
+Bot: Сегодняшняя дата 2024-04-26
+
+User: sagat
+Bot: Текущее время 22-02
+
+User: Salam
+Bot:  Salam size näme kömek edip bilerin
+
+User: shu gun haysy gun
+Bot: Şu gün Saturday
+
+User: sagat
+Bot: Текущее время 12-28
+
+User: погода в Мары
+Bot: Сейчас в Мары Температура 26.96°C 
+Если у вас есть фотоаппарат или смартфон с хорошей камерой, 
+отправляйтесь на прогулку и делайте красивые фотографии природы, 
+архитектуры или просто своих близких.
+Носите легкую рубашку, майку или футболку из натуральных материалов, 
+таких как хлопок или лен. Это поможет вам оставаться прохладным и комфортным в течение дня.
+
+User: Howa maglumaty
+Bot: В каком городе вы хотите узнать погоду?
+
+User: MAry
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: mary
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Мары
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: mary howa maglumaty
+Bot: Дата: 2024-04-27, Температура: 17.72°C - 25.52°C
+Облачная и пасмурная погода создает
+уютную атмосферу для посещения кафе или уютного места для чтения. 
+Можно насладиться чашечкой горячего напитка, читать книгу или просто
+наслаждаться спокойным временем.
+можно выбрать легкую куртку или свитер. Они помогут защитить от прохлады, 
+но при этом не будут слишком громоздкими. 
+
+Дата: 2024-04-28, Температура: 14.47°C - 21.2°C
+Облачная и пасмурная погода создает
+уютную атмосферу для посещения кафе или уютного места для чтения. 
+Можно насладиться чашечкой горячего напитка, читать книгу или просто
+наслаждаться спокойным временем.
+можно выбрать легкую куртку или свитер. Они помогут защитить от прохлады, 
+но при этом не будут слишком громоздкими. 
+
+Дата: 2024-04-29, Температура: 12.62°C - 22°C
+Если у вас есть фотоаппарат или смартфон с хорошей камерой, 
+отправляйтесь на прогулку и делайте красивые фотографии природы, 
+архитектуры или просто своих близких.
+Носите легкую рубашку, майку или футболку из натуральных материалов, 
+таких как хлопок или лен. Это поможет вам оставаться прохладным и комфортным в течение дня. 
+
+Дата: 2024-04-30, Температура: 15.16°C - 26.47°C
+Облачная и пасмурная погода создает
+уютную атмосферу для посещения кафе или уютного места для чтения. 
+Можно насладиться чашечкой горячего напитка, читать книгу или просто
+наслаждаться спокойным временем.
+можно выбрать легкую куртку или свитер. Они помогут защитить от прохлады, 
+но при этом не будут слишком громоздкими. 
+
+Дата: 2024-05-01, Температура: 17.3°C - 29.19°C
+Если у вас есть фотоаппарат или смартфон с хорошей камерой, 
+отправляйтесь на прогулку и делайте красивые фотографии природы, 
+архитектуры или просто своих близких.
+Носите легкую рубашку, майку или футболку из натуральных материалов, 
+таких как хлопок или лен. Это поможет вам оставаться прохладным и комфортным в течение дня. 
+
+Дата: 2024-05-02, Температура: 17.92°C - 27.34°C
+Облачная и пасмурная погода создает
+уютную атмосферу для посещения кафе или уютного места для чтения. 
+Можно насладиться чашечкой горячего напитка, читать книгу или просто
+наслаждаться спокойным временем.
+можно выбрать легкую куртку или свитер. Они помогут защитить от прохлады, 
+но при этом не будут слишком громоздкими. 
+
+
+
+User: help me
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Gowumy
+Bot: Salam mende duýgy ýok men Paýhasly emeli aňy
+
+User: Zagran
+Bot: Daşary ýurt paspordy üçin ýaş kategoriýalary bar siz menden indiki sözler bilen sorap bilersiňiz:(zagran dokumentlar 16 ýaş; zagran dokumentlar 16-18 ýaş; zagran 18 ýaşdan uly)
+
+User: 16 ýaş; zagran dokumentlar
+Bot: list of documents required for Zagran for children under 16 years old 1 "1 3x4 size photo" 2 "Birth certificate" 3 "Certificate of permanent residence" 4 "Certificate of marriage or divorce of parents" (in case of divorce a document confirming the date of marriage)" 5 "Passport confirming that he or his parents belong to another country" 6 "Pasports of Turkmen citizens of his parents"
+
+User: 16 ýaş; zagran
+Bot: list of documents required for Zagran for children under 16 years old 1 "1 3x4 size photo" 2 "Birth certificate" 3 "Certificate of permanent residence" 4 "Certificate of marriage or divorce of parents" (in case of divorce a document confirming the date of marriage)" 5 "Passport confirming that he or his parents belong to another country" 6 "Pasports of Turkmen citizens of his parents"
+
+User: 2024-nji yylyn ady
+Bot: PÄHIM-PAÝHAS UMMANY MAGTYMGULY PYRAGY» ÝYLY
+
+User: sagat
+Bot: Текущее время 12-36
+
+User: Salam gowumy
+Bot: Salam mende duýgy ýok men Paýhasly emeli aňy
+
+User: hello
+Bot: Hello how can I help you
+
+User: what time is it
+Bot: Текущее время 12-37
+

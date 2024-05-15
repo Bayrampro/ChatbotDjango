@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link href="{% static 'img/logo-original.png' %}" rel="icon">
+</head>
+<body>
+    <h1>Simple Chatbot</h1>
+    <input type="text" id="input-text">
+    <button onclick="getResponse()">Send</button>
+    <div id="response"></div>
+
+    <script>
+        function getResponse() {
+            var inputText = document.getElementById('input-text').value;
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById('response').innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "/get_response/?input_text=" + inputText, true);
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block title %} {% trans 'Baş sahypa'%} {% endblock %}
+{% block content %}
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 bg-primary hero-header mb-5" id="home">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">{% trans 'Paýhasly' %}</div>
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">{% trans 'Paýhasly bilen' %} <br> {% trans 'sorag-jogap alyş' %}</h1>
+                    <!-- <p class="text-white mb-4 animated slideInRight">sorag-jogap alyş</p> -->
+                    <a {% if request.user.is_authenticated %} href="{% url 'chat' %}" {% else %} href="{% url 'login' %} {% endif %}" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">{% trans 'Işe başla' %}</a>
+                    {% if request.user.is_staff %}
+                        <a href="{% url 'send_newsletter' %}" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">{% trans 'Habarnama ugratmak' %}</a>
+                    {% endif %}
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-lg-end">
+{#                    <img class="img-fluid" src="{% static 'img/hero-img.png' %}" alt="">#}
+                    <img class="img-fluid" src="{% static 'img/3d_logo.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(20, 24, 62, 0.7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn btn-square bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-light p-3"
+                            placeholder="Type search keyword">
+                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img">
+                        <img class="img-fluid" src="{% static 'img/about-img.jpg' %}">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">{% trans 'Taslama hakda' %}</div>
+                    <h1 class="mb-4">{% trans 'Köp soraglaryň jogabyny tap' %}</h1>
+                    <p class="mb-4">{% trans 'Biziň taslamamyz adamlaryň gündeki durmuşynda ýüze çykýan soraglaryna jogap berýän maglumathana bolup durýar.' %}
+                        {% trans 'Indi siz öz soragyňyza jogap tapjak bolup, köp saýtlara girip wagtyňyzy ýitirmeli däl. Hemmezat elýeterli we aňsat' %}</p>
+                    <p class="mb-4">{% trans 'Daşary ýurt passporta nähili dokumentler gerek?' %} <br> {% trans 'Haýsy daşary ýurt ýokary okuw jaýlar biziň ýurdumyzda tassyklanýar?' %}  <br> {% trans 'Goýum karta nädip açmaly?' %} <br>
+                    {% trans 'Bu soraglaryň ählisiniň jogaby Paýhaslyda!' %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Feature Start -->
+
+    <!-- Feature End -->
+
+
+    <!-- Case Start -->
+    <div class="container-fluid bg-light py-5" id="News">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="mb-4"><a href="{% url 'news' %}">{% trans 'Täzelikler' %}</a></h1>
+            </div>
+            <div class="row g-4">
+                {% for n in news %}
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="{{ n.img.url }}" alt="">
+                        <a class="case-overlay text-decoration-none" href="{{ n.get_absolute_url }}">
+                            <h5 class="lh-base text-white mb-3">{{ n.title }}
+                            </h5>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- Case End -->
+
+    <!-- Team Start -->
+    <div class="container-fluid bg-light py-5" id="Our-team">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="mb-4">{% trans 'Biziň toparymyz' %}</h1>
+                    <p class="mb-4">{% trans 'Biziň ýaş we döredijikli toparymyz dürli web-sahypalary döredip berýär. Olaryň içinde marketplace-lar, kitaphanalar, kafeler we şm görnüşli saýtlar girýärler. Biz günde kämilleşmek üçin hereketde.' %}</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="{% static 'img/sen.jpg' %}" alt="">
+                                        <h5 class="mb-0">{% trans 'Baýram Annagurbanow' %}</h5>
+                                        <small>{% trans 'Full-Stack web-developer' %}</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-square btn-primary m-1" href="https://tmstart.me/+99361105022"><i
+                                                    class="fa fa-paper-plane"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href="https://linkm.me/users/u_727944"><i
+                                                    class="fa fa-message"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href="https://api.whatsapp.com/send/?phone=99361105022"><i
+                                                    class="fab fa-whatsapp"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="{% static 'img/menem.jpg' %}" alt="">
+                                        <h5 class="mb-0">{% trans 'Nedir Akyýew' %}</h5>
+                                        <small>{% trans 'Full-Stack web-developer' %}</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-square btn-primary m-1" href="https://t.me/+99365592820"><i
+                                                    class="fa fa-paper-plane"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href="https://linkm.me/users/u_1004208"><i
+                                                    class="fa fa-message"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href="https://api.whatsapp.com/send/?phone=99365592820"><i
+                                                    class="fab fa-whatsapp"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="mb-4">{% trans 'Emeli aňyň peýdasy' %}</h1>
+                    <p class="mb-4">{% trans 'Emeli intellekt (EI), adamlaryň ýa-da haýwanlaryň  tebigy intellektinden tapawutlylykda, maşynlar ýa-da  beýleki  enjamlar  tarapyndan sanly  görnüşde  görkezilen akyl. Öňdebaryjy EI okuw kitaplary bu ugry “akylly agentleri” öwrenmek, ýagny daşky gurşawy duýýan we maksatlaryna ýetmek mümkinçiligini artdyrýan hereketleri edýän ulgam hökmünde kesgitleýär. Käbir meşhur hünärmenler  bu  adalgany “öwrenmek” we “meseläni çözmek” ýaly adam aňy bilen baglanyşdyrýan “akyl” funksiýalaryna meňzeýän enjamlary, programmalary suratlandyrmak üçin ulanýar.' %}</p>
+                </div>
+                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel border-start border-primary">
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">{% trans 'Bilmeýän zatlaryňy Paýhaslydan sora' %}</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/sen.jpg' %}"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">{% trans 'Bayram Annagurbanow' %}</h5>
+                                    <span>{% trans 'Full-Stack web-developer' %}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">{% trans 'Paýhasly 24/7 siziň hyzmatyňyzda' %}</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/men.jpg' %}"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">{% trans 'Nedir Akyýew' %}</h5>
+                                    <span>{% trans 'Full-Stack web-developer' %}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">{% trans 'Gündeki soraglaryň jogaplaryny şu taýdan gözle' %}</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/sen.jpg' %}"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">{% trans 'Baýram Annagurbanow' %}</h5>
+                                    <span>{% trans 'Full-Stack web-developer' %}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid bg-primary newsletter py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s">
+                    <img class="img-fluid" src="{% static 'img/newsletter.png' %}" alt="">
+                </div>
+                <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="text-white mb-4">{% trans 'Biziň habarlarymyza goşul' %}</h1>
+                    <div class="position-relative w-100 mt-3 mb-2">
+                        <form method="post">
+                            {% csrf_token %}
+{#                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"#}
+{#                            placeholder="Enter Your Email" style="height: 48px;">#}
+                            {{ form.email }}
+                            <button type="submit" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                    class="fa fa-paper-plane text-primary fs-4"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+{% endblock %}

@@ -1,0 +1,640 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<!-- Loopple Templates: https://www.loopple.com/templates | Copyright Loopple (https://www.loopple.com) | This copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% trans 'Paýhasly çatbot' %}</title>
+
+
+    <link rel="stylesheet" href="{% static 'chat-css/chat.min.css' %}">
+    <link rel="stylesheet" href="{% static 'chat-css/chat.googleapi.css' %}">
+    <link rel="stylesheet" href="{% static 'chat-css/chat.nucleo.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/theme.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/loopple/loopple.css' %}">
+    <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'fontawesome-free-6.4.2-web/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fontawesome-free-6.4.2-web/js/all.min.js' %}">
+    <link href="{% static 'img/logo-original.png' %}" rel="icon">
+</head>
+
+<body>
+    <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-white loopple-fixed-start" id="sidenav-main">
+        <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+            <div class="sidenav-header  align-items-center">
+            </div>
+            <hr class="mt-0 mb-3">
+            <div class="d-flex align-items-center">
+                <img src="{% static 'img/1.png' %}" class="avatar ml-3">
+                <div class="ml-3">
+                    <h4 class="mb-0">{% trans 'Paýhasly' %}</h4>
+                    <p class="text-xs mb-0">{% trans 'Maglumathana' %}</p>
+                </div>
+            </div>
+            <hr class="mt-3 mb-0">
+            <div class="navbar-inner">
+                <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{% url 'chat' %}">
+                                <i class="fa fa-desktop text-primary"></i>
+                                <span class="nav-link-text">{% trans 'Söhbetdeşlik' %}</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'home' %}#about">
+                                <i class="fa fa-question"></i>
+                                <span class="nav-link-text">{% trans 'Taslama hakda' %}</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'home' %}#News">
+                                <i class="fa fa-newspaper"></i>
+                                <span class="nav-link-text">{% trans 'Täzelikler' %}</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'home' %}#Our-team">
+                                <i class="fa fa-users text-dark"></i>
+                                <span class="nav-link-text">{% trans 'Biziň toparymyz' %}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-primary card position-fixed bottom-0">
+                    <div class="card-body">
+                        <h4 class="text-white">{% trans 'Kömek gerekmi?' %}</h4>
+                        <a href="{% url 'contact' %}" class="btn btn-white">{% trans 'Habarlaşmak' %}</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </nav>
+    <div class="main-content" id="panel">
+        <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom" id="navbarTop">
+            <a href="{% url 'start_new_chat' %}" class="m-lg-3 btn-primary" title="Täze çat">
+                <i class="fa fa-edit"></i>
+            </a>
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="navbar-search navbar-search-dark form-inline mr-sm-3 mb-0" id="navbar-search-main">
+                        <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </form>
+                    <ul class="navbar-nav align-items-center  ml-md-auto ">
+                        <li class="nav-item d-xl-none">
+                            <div class="pr-3 sidenav-toggler sidenav-toggler-dark active" data-action="sidenav-pin" data-target="#sidenav-main">
+                                <div class="sidenav-toggler-inner">
+                                    <i class="sidenav-toggler-line"></i>
+                                    <i class="sidenav-toggler-line"></i>
+                                    <i class="sidenav-toggler-line"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+{#                                <img alt="flag" src="https://demos.creative-tim.com/argon-dashboard-pro-bs4/assets/img/icons/flags/US.png">#}
+                                  <img src="{% static 'img/lang-icon.png' %}" width="20" height="20">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right py-0 overflow-hidden">
+                                <div class="px-3 pt-3">
+                                    <h6 class="text-sm text-muted m-0">{% trans 'Dil saýla' %}</h6>
+                                </div>
+                                <div class="list-group list-group-flush">
+
+                                    <a href="" id="first" class="list-group-item list-group-item-action">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+{#                                                <img alt="flag" src="https://demos.creative-tim.com/argon-dashboard-pro-bs4/assets/img/icons/flags/US.png">#}
+                                                <img src="{% static 'lang-flags/united-kingdom.png' %}" width="20" height="20">
+                                            </div>
+                                            <div class="col ml--2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <h4 class="mb-0 text-sm">EN</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" id="second" class="list-group-item list-group-item-action">
+                                        <div class="row align-items-center mt-3">
+                                            <div class="col-auto">
+{#                                                <img alt="flag" src="https://demos.creative-tim.com/argon-dashboard-pro-bs4/assets/img/icons/flags/DE.png">#}
+                                                  <img src="{% static 'lang-flags/russia.png' %}" width="20" height="20">
+                                            </div>
+                                            <div class="col ml--2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <h4 class="mb-0 text-sm">RU</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" id="third" class="list-group-item list-group-item-action">
+                                        <div class="row align-items-center mt-3">
+                                            <div class="col-auto">
+{#                                                <img alt="flag" src="https://demos.creative-tim.com/argon-dashboard-pro-bs4/assets/img/icons/flags/DE.png">#}
+                                                  <img src="{% static 'lang-flags/turkmenistan.png' %}" width="20" height="20">
+                                            </div>
+                                            <div class="col ml--2">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <h4 class="mb-0 text-sm">TK</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <script>
+                        const hostname = window.location.hostname;
+                        const port = window.location.port;
+                        const link1 = document.getElementById("first");
+                        const link2 = document.getElementById("second");
+                        const link3 = document.getElementById("third");
+                        if (hostname == '127.0.0.1') {
+                            link1.href = "http://" + hostname + ':' + port + '/en';
+                            link2.href = "http://" + hostname + ':' + port + '/ru';
+                            link3.href = "http://" + hostname + ':' + port + '/tk';
+                        } else {
+                            link1.href = "http://" + hostname + '/en';
+                            link2.href = "http://" + hostname + '/ru';
+                            link3.href = "http://" + hostname + '/tk';
+                        }
+                    </script>
+                    <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="media align-items-center">
+                                    <span class="avatar avatar-sm">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu  dropdown-menu-right ">
+                                <div class="dropdown-header noti-title">
+                                    <h6 class="text-overflow m-0">{% trans 'Hoş geldiňiz!' %}</h6>
+                                </div>
+                                <a href="{% url 'password_reset' %}" class="dropdown-item">
+                                    <i class="fa fa-key"></i>
+                                    <span>{% trans 'Parolyňy üýtget' %}</span>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="{% url 'logout' %}" class="dropdown-item">
+                                    <i class="fa fa-sign-out-alt"></i>
+                                    <span>{% trans 'Çykyş' %}</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<div class="container-fluid pt-3">
+    <div class="row removable">
+        <div class="col-lg-12 px-sm-0">
+            <div class="card shadow-none px-0 bg-transparent mt-0 mb-4">
+                <div class="card-body px-0 pb-0">
+                    <div class="px-0 pb-4">
+                        <div class="row flex-row justify-content-between">
+                            <div class="col-lg-9" id="chat-container"> <!-- Move id="chat-container" here -->
+                                <div class="card max-height-vh-70" style="max-height: 70vh;">
+                                    <div class="card-header shadow-xl">
+                                        <div class="row">
+                                            <div class="col-md-10">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="ms-3">
+                                                        <h3 class="mb-0 d-block">{% trans 'Paýhasly' %}</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body overflow-auto overflow-x-hidden" id="message-place" style="height: 400px"> <!-- Move id="message-place" here -->
+                                        <!-- Messages will be appended here -->
+
+                                        <div class="card-body overflow-auto overflow-x-hidden" id="message-place">
+                                            {% if not messages %}
+                                                <div id="placeholder-message" class="text-center text-muted">
+                                                    <img src="{% static 'img/logo-original.png' %}"
+                                                         alt="ChatBot Image"
+                                                         class="img-fluid mb-3" style="max-width: 100px;">
+                                                    <p class="mb-0">{% trans 'Salam' %} {{ request.user }}! {% trans 'Size nähili maglumat gerek?' %}</p>
+                                                </div>
+                                            {% endif %}
+                                            {% for sender, message in messages %}
+                                                {% if sender == 'user' %}
+                                                  <div class="justify-content-end row mb-4">
+                                                    <div class="col-auto">
+                                                        <div class="card bg-gradient-primary text-white">
+                                                            <div class="card-body p-2 text-right">
+                                                                <p class="mb-1">{{message}}</p>
+                                                                <div class="d-flex align-items-center justify-content-end text-sm opacity-6">
+                                                                    <i class="fa fa-check-double mr-1 text-xs" aria-hidden="true"></i>
+{#                                                                    <small>${currentTime}</small>#}
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                {% else %}
+                                                    <div class="justify-content-start row mb-4">
+                                                        <div class="col-auto">
+                                                            <div class="card">
+                                                                <div class="card-body p-2">
+                                                                    <p class="mb-1">{{message}}</p>
+                                                                    <div class="d-flex align-items-center justify-content-end text-sm opacity-6">
+{#                                                                        <small>${currentTime}</small>#}
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                {% endif %}
+
+                                            {% endfor %}
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="card-footer d-block">
+                                        <form class="align-items-center" id="chat-form">
+                                            <div class="input-group mb-3">
+                                                <input type="text" placeholder="{% trans 'Sorag sora...' %}" class="form-control" aria-label="Amount (to the nearest dollar)" id="user-input">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">
+                                                        <button
+                                                                type="submit"
+                                                                style="
+                                                                 background-color: transparent;
+                                                                 border: none;
+                                                                "
+                                                        ><i class="fa fa-paper-plane" style="color: #0a58ca"></i></button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- No changes needed for the right column with user information -->
+                                    <div class="col-lg-3">
+                                        <div class="card max-height-vh-70 h-100 overflow-auto overflow-x-hidden mb-5 mb-lg-0" style="max-height: 70vh;">
+                                            <div class="card-body p-2">
+                                                <a href="javascript:;" class="d-block p-2">
+                                                </a>
+                                                <div class="p-2 text-center">
+                                                    <a href="javascript:;" class="d-block p-2">
+                                                        <div style="
+                                                        border-radius: 50%;
+                                                        width: 100px;
+                                                        height: 100px;
+                                                        background-color: #0a58ca;
+                                                        margin: 0 auto;
+                                                        font-size: 40px;
+                                                        padding: 18px;
+                                                        color: white;
+                                                        ">
+                                                         {{ username|slice:":1" }}
+                                                        </div>
+                                                    </a>
+                                                    <div class="ml-2 mt-0 mb-0 text-center">
+                                                        <div class="justify-content-between align-items-center">
+                                                            <h3 class="mb-0 mt-1">{{ username }}</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr class="my-3">
+                                                <div class="mx-3">
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <i class="fa fa-envelope opacity-7"></i>
+                                                        <div class="ml-3">
+                                                            <h5 class="mb-0">Email</h5>
+                                                            <span class="text-sm text-primary">{{ email }}
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                {% for dialogue, session_key in dialogues_with_session_keys %}
+                                                    <div class="mx-3 d-flex align-items-center mb-3">
+                                                        <i class="fa fa-message opacity-7"></i>
+                                                        <div class="ml-3">
+                                                            <span class="text-sm text-primary">
+                                                                <a href="{% url 'dialogue_detail' user=request.user session_key=session_key %}" id="dialogueLink">
+                                                                    {{ dialogue }}
+                                                                </a>
+                                                            </span>
+                                                        </div>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <a href="{% url 'delete_dialogue' session_key %}" class="btn btn-sm btn-danger ms-auto" id="openModalButton">
+                                                            <i class="fa fa-trash"></i>
+                                                        </a>
+                                                    </div>
+
+                                                {% empty %}
+                                                    <div class="container mt-5">
+                                                        <div class="row">
+                                                            <div class="col text-center">
+                                                                <h2>{% trans 'Häzirlikçe söhbetdeşlik ýok' %}</h2>
+                                                                <p><i class="fas fa-comments fa-3x mt-3"></i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const chatContainer = document.getElementById('message-place');
+
+    const placeholderMessage = document.getElementById('placeholder-message');
+
+    const chatForm = document.getElementById('chat-form');
+    const userInput = document.getElementById('user-input');
+
+    chatForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const userMessage = userInput.value.trim();
+        if (userMessage === '') return;
+
+        appendMessage('user', userMessage);
+
+        // Показываем "печатает..."
+        appendTypingMessage();
+
+        // Отправляем сообщение на сервер
+        fetch('/predict_address/?query=' + encodeURIComponent(userMessage))
+            .then(response => response.json())
+            .then(data => {
+                // Отображаем ответ от бота
+                setTimeout(() => {
+                    removeTypingMessage(); // Remove "печатает..." message
+                    appendMessage('bot', data.address);
+                }, 2000);
+            })
+            .catch(error => console.error('Ошибка:', error));
+
+        // Очищаем поле ввода
+        userInput.value = '';
+
+
+       placeholderMessage.style.display = 'none';
+
+    });
+
+    function appendMessage(sender, message) {
+    const messageElement = document.createElement('div');
+    const alignmentClass = sender === 'user' ? 'justify-content-end' : 'justify-content-start';
+    const textAlignmentClass = sender === 'user' ? 'text-right' : ''; // No text alignment for bot messages
+    const bgClass = sender === 'user' ? 'bg-gradient-primary' : '';
+    const colorWhite = sender === 'user' ? 'text-white' : '';
+    const icon = sender === 'user' ? 'fa fa-check-double mr-1 text-xs' : '';
+    const currentTime = new Date().toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
+    messageElement.classList.add('row', alignmentClass, 'mb-4');
+    messageElement.innerHTML = `
+        <div class="col-auto">
+            <div class="card ${bgClass} ${colorWhite}">
+                <div class="card-body p-2 ${textAlignmentClass}">
+                    <p class="mb-1">${message}</p>
+                    <div class="d-flex align-items-center justify-content-end text-sm opacity-6">
+                        <i class="${icon}" aria-hidden="true"></i>
+                        <small>${currentTime}</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    chatContainer.appendChild(messageElement);
+
+    // Scroll to the bottom to see the latest message
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+}
+
+
+    function appendTypingMessage() {
+        const typingMessage = document.createElement('div');
+        typingMessage.classList.add('row', 'justify-content-start', 'mb-4', 'typing');
+        typingMessage.innerHTML = `
+            <div class="col-auto">
+                <div class="card">
+                    <div class="card-body p-2">
+                        <p class="mb-1">{% trans 'Печатает...' %}</p>
+                    </div>
+                </div>
+            </div>
+        `;
+        chatContainer.appendChild(typingMessage);
+
+        // Прокручиваем вниз, чтобы видеть последнее сообщение
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+    }
+
+    function removeTypingMessage() {
+        const typingMessage = chatContainer.querySelector('.typing');
+        if (typingMessage) {
+            typingMessage.remove();
+        }
+    }
+});
+
+</script>
+
+        <!-- Footer -->
+        <footer class="footer pt-0 px-4">
+            <div class="row align-items-center justify-content-lg-between">
+                <div class="col-lg-6">
+                    <div class="copyright text-center  text-lg-left  text-muted">
+                        © <span id="place"></span> {% trans 'Döredijiler' %}
+                        <a href="mailto:by.net.develop@gmail.com" title="by.net.develop@gmail.com" class="font-weight-bold ml-1" target="_blank">ByNet</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="{% static 'chat-js/chat-jquery.min.js' %}"></script>
+    <script src="{% static 'chat-js/chat-bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'chat-js/chat-js.cookie.js' %}"></script>
+    <script src="{% static 'chat-js/chat-Chart.min.js' %}"></script>
+    <script src="{% static 'chat-js/chat-chart.extension.js' %}"></script>
+    <script src="{% static 'chat-js/chat-argon.min.js' %}"></script>
+    <script>
+        let date = new Date();
+        let place = document.getElementById('place');
+        place.innerHTML = date.getFullYear();
+    </script>
+
+
+    <script>
+        if (document.querySelector(".chart-bar")) {
+         var chartsBar = document.querySelectorAll(".chart-bar");
+
+        chartsBar.forEach(function(chart) {
+            new Chart(chart, {
+               type: "bar",
+               data: {
+                 labels: ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                 datasets: [
+                   {
+                     label: "Sales",
+                     tension: 0.4,
+                     borderWidth: 0,
+                     pointRadius: 0,
+                     backgroundColor: "#fb6340",
+                     data: [25, 20, 30, 22, 17, 29],
+                     maxBarThickness: 10,
+                   },
+                 ],
+               },
+               options: {
+                 responsive: true,
+                 maintainAspectRatio: false,
+                 legend: {
+                   display: false,
+                 },
+                 tooltips: {
+                   enabled: true,
+                   mode: "index",
+                   intersect: false,
+                 },
+                 scales: {
+                   yAxes: [
+                     {
+                       gridLines: {
+                         borderDash: [2],
+                         borderDashOffset: [2],
+                         drawTicks: false,
+                         drawBorder: false,
+                         lineWidth: 1,
+                         zeroLineWidth: 0,
+                         zeroLineBorderDash: [0],
+                         zeroLineBorderDashOffset: [2],
+                       },
+                       ticks: {
+                         beginAtZero: true,
+                         padding: 10,
+                         fontSize: 13,
+                         lineHeight: 5,
+                         fontColor: "#8898aa",
+                         fontFamily: "Open Sans",
+                       },
+                     },
+                   ],
+                   xAxes: [
+                     {
+                       gridLines: {
+                         display: false,
+                         drawBorder: false,
+                         drawOnChartArea: false,
+                         drawTicks: false,
+                       },
+                       ticks: {
+                         padding: 20,
+                         fontSize: 13,
+                         fontColor: "#8898aa",
+                         fontFamily: "Open Sans",
+                       },
+                     },
+                   ],
+                 },
+               },
+            });
+        });
+        }
+
+        if (document.querySelector(".chart-line")) {
+
+            var chartsLine = document.querySelectorAll(".chart-line");
+
+            chartsLine.forEach(function(chart) {
+
+                new Chart(chart, {
+                    type: "line",
+                    data: {
+                        labels: ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                        datasets: [{
+                            label: "Performance",
+                            tension: 0.4,
+                            borderWidth: 4,
+                            borderColor: "#5e72e4",
+                            pointRadius: 0,
+                            backgroundColor: "transparent",
+                            data: [0, 20, 10, 30, 15, 40, 20, 60, 60],
+                        }, ],
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        legend: {
+                            display: false,
+                        },
+                        tooltips: {
+                            enabled: true,
+                            mode: "index",
+                            intersect: false,
+                        },
+                        scales: {
+                            yAxes: [{
+                                barPercentage: 1.6,
+                                gridLines: {
+                                    drawBorder: false,
+                                    color: "rgba(29,140,248,0.0)",
+                                    zeroLineColor: "transparent",
+                                },
+                                ticks: {
+                                    padding: 0,
+                                    fontColor: "#8898aa",
+                                    fontSize: 13,
+                                    fontFamily: "Open Sans",
+                                },
+                            }, ],
+                            xAxes: [{
+                                barPercentage: 1.6,
+                                gridLines: {
+                                    drawBorder: false,
+                                    color: "rgba(29,140,248,0.0)",
+                                    zeroLineColor: "transparent",
+                                },
+                                ticks: {
+                                    padding: 10,
+                                    fontColor: "#8898aa",
+                                    fontSize: 13,
+                                    fontFamily: "Open Sans",
+                                },
+                            }, ],
+                        },
+                        layout: {
+                            padding: 0,
+                        },
+                    },
+                });
+
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{% load static %}
+{% load i18n %}
+<div class="container-fluid bg-dark text-white-50 footer pt-5" id="contact">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <a href="{% url 'home' %}" class="d-inline-block mb-3">
+                        <!-- <h1 class="text-white">EA<span class="text-primary">.</span>Payhasly</h1> -->
+                        <img src="{% static 'img/1.png' %}" alt="" width="220" height="220">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="text-white mb-4">{% trans 'Habarlaşmak üçin' %}</h5>
+                    <p><i class="fa fa-phone-alt me-3"></i>+99361105022</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+99365592820</p>
+                    <p><i class="fa fa-envelope me-3"></i>by.net.develop@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://t.me/+99365592820"><i class="fa fa-paper-plane"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://linkm.me/users/u_727944"><i class="fa fa-message"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://api.whatsapp.com/send/?phone=99361105022"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">{% trans 'Salgylanma' %}</h5>
+                    <a class="btn btn-link" href="{% url 'home' %}#home">{% trans 'Baş sahypa' %}</a>
+                    <a class="btn btn-link" href="{% url 'home' %}#about"> {% trans 'Taslama hakda' %}</a>
+                    <a class="btn btn-link" href="{% url 'home' %}#News">{% trans 'Täzelikler' %}</a>
+                    <a class="btn btn-link" href="{% url 'home' %}#Our-team">{% trans 'Biziň toparymyz' %}</a>
+                    <a class="btn btn-link" href="{% url 'home' %}#contact">{% trans 'Habarlaşmak' %}</a>
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">{% trans 'Paýhasly ByNet' %}</a>, {% trans 'Ähli hukuklar goragly' %}.
+
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a class="border-bottom" href="by.net.develop@gmail.com">by.net.develop@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

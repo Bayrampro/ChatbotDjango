@@ -1,0 +1,165 @@
+User: Salam
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Salam
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Salam, Salam! Günüňiz nähili geçdi?
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Salam
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Salam
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: new york
+Bot: NY 10036
+
+User: парикмахерская
+Bot: +75678901234
+
+User: Привет
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Salam
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Salam
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Привет
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Salam Gowmy ýagdaýlaryn
+Bot: Salam mende duýgy ýok men paýhasly emeli aňy
+
+User: Salam
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Salam
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Salam gowmy
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Gowmy
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Salam
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Привет
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Salam Gowmy ýagdaýlaryn
+Bot: Salam mende duýgy ýok men paýhasly emeli aňy
+
+User: Привет
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Salam gowumy sen
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: What is the capital of France?
+Bot: Paris
+
+User: Capital France
+Bot: Paris
+
+User: france capitel
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Salam gowumy ýagdaýlaryň?
+Bot: Salam hawwa gowy
+
+User: Salam
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Salam gowmy
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Türkmenistanyň paytagty näme?
+Bot: Aşgabat
+
+User: Turkmenistan paytagt
+Bot: Salam hawwa gowy
+
+User: What is the capital of France
+Bot: Paris
+
+User: Как называется самая высокая гора
+Bot: Эверест
+
+User: Сколько лет длится один мандат президента США
+Bot: Four years
+
+User: Türkmenistanyň paytagty näme?
+Bot: Aşgabat
+
+User: Salam gowumy ýagdaýlaryň?
+Bot: Salam hawwa gowy
+
+User: Salam
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Salam gowumy ýagdaýlaryň?
+Bot: Salam hawwa gowy
+
+User: Salam gowumy ýagdaýlaryň?
+Bot: Salam hawwa gowy
+
+User: Salam
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Salam gowumy ýagdaýlaryň?
+Bot: Salam hawwa gowy
+
+User: Привет
+Bot: Salam hawwa gowy
+
+User: Salam
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Gowumy
+Bot: Salam hawwa gowy
+
+User: What is the capital of France?
+Bot: Paris
+
+User: Salam gowumy ýagdaýlaryň?
+Bot: Salam hawwa gowy
+
+User: Who wrote the play "Romeo and Juliet"?
+Bot: William Shakespeare
+
+User: Romeo
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: wrote
+Bot: William Shakespeare
+
+User: Salam gowumy ýagdaýlaryň
+Bot: Salam gowy mende duygy yok men Payhasly emeli any
+
+User: Salam gowumy yagdaylaryn
+Bot: Salam gowy mende duygy yok men Payhasly emeli any
+
+User: Näme edýän
+Bot: Men size nähili kömek edip bilerin
+
+User: Name edyan
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Name edyan
+Bot: Men size nähili kömek edip bilerin
+
+User: Näme edýän
+Bot: Извините, не могу найти ответ на ваш вопрос.
+
+User: Name edyan
+Bot: Men size nähili kömek edip bilerin
+
+User: Näme edýän
+Bot: Men size nähili kömek edip bilerin
+
