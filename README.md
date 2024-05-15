@@ -1,1 +1,1 @@
-Application Developed by ByNEd
+Application Developed by ByNet
